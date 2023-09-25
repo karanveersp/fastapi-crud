@@ -1,11 +1,8 @@
-Build and start the container
+# FastAPI with Docker CRUD
 
-```sh
-docker-compose up -d --build
-```
+This is a sample crud app built by following the tutorial here:
+https://testdriven.io/blog/fastapi-crud/
 
-Run tests inside container
-
-```sh
-docker-compose exec web pytest .
-```
+I customized the project a bit:
+- Added a `Makefile` for easy execution/documentation of all project tasks.
+- Used `pdm` to manage the dependencies of the python project.
