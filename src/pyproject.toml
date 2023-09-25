@@ -1,0 +1,22 @@
+[project]
+name = "Learning-FastAPI"
+version = "0.0.1"
+description = "A learning project"
+authors = [{ name = "karanveersp", email = "karanv41@proton.me" }]
+dependencies = [
+    "fastapi>=0.103.1",
+    "uvicorn[standard]>=0.23.2",
+    "asyncpg>=0.28.0",
+    "databases>=0.8.0",
+    "psycopg2-binary>=2.9.7",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.9.1",
+    "pytest>=7.4.2",
+    "httpx>=0.25.0",
+]
