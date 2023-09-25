@@ -17,9 +17,9 @@ start:
 stop:
 	docker-compose stop
 
-# remove all containers/services
+# remove all containers/services and volumes
 clean:
-	docker-compose down
+	docker-compose down --volumes
 
 # view logs from web service
 logs:
